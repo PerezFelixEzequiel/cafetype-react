@@ -1,16 +1,42 @@
-# React + Vite
+# CAFETYPE - Migración a React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CAFETYPE es un proyecto web de cafetería y tienda online desarrollado como migración de un sitio creado originalmente con HTML, CSS y JavaScript hacia React con Vite.
 
-Currently, two official plugins are available:
+El objetivo del proyecto es mantener la estructura visual original, pero utilizando una arquitectura basada en componentes, manejo de estados, props y navegación con React Router.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías utilizadas
 
-## React Compiler
+- React
+- Vite
+- React Router DOM
+- Swiper
+- CSS
+- JavaScript
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funcionalidades principales
 
-## Expanding the ESLint configuration
+- Página principal con banner interactivo.
+- Sección de productos de café.
+- Cards reutilizables para productos.
+- Modal dinámico para ver el detalle de cada café.
+- Test para descubrir un café recomendado.
+- Página de tienda.
+- Filtros por tipo de producto, origen y tueste.
+- Carrito de compras.
+- Contador de productos en el carrito.
+- Suma, resta y cálculo total del carrito.
+- Mensaje de compra finalizada.
+- Formulario de registro controlado con estado.
+- Navegación entre páginas usando React Router.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estructura del proyecto
+
+```txt
+src/
+├── assets/
+├── components/
+├── data/
+├── pages/
+├── styles/
+├── App.jsx
+└── main.jsx
