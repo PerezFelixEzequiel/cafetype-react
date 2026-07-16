@@ -1,0 +1,24 @@
+/* ESTILOS GENERALES */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "bree", sans-serif;
+  background-image: url("../assets/general/fondo.png");
+  background-size: cover;
+  color: #fff;
+}
+
+.container-inf {
+  width: min(1200px, calc(100% - 64px));
+  margin: 0 auto;
+}

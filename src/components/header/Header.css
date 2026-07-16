@@ -1,0 +1,228 @@
+/*HEADER*/
+header {
+  padding: 15px 0;
+  border-bottom: 2px solid #db941a13;
+}
+header .container-inf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*LOGO*/
+
+.logoPrincipal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoPrincipal .logoLink {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logoPrincipal .logoLink .logoGrano {
+  width: 40px;
+  height: 40px;
+}
+
+
+.logoPrincipal .logoLink .logoNombre {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logoPrincipal .logoLink .logoNombre span{
+  color: #f6cb2e;
+}
+
+/*Boton de hamburguesa oculto en desktop*/
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 300px;
+  height: 40px;
+  display: block;
+}
+
+/*BARRA BUSCADORA*/
+
+.buscador-tienda {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 550px;
+  border: none;
+}
+
+.buscador-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 100px;
+  border: none;
+}
+
+.buscador-input:focus {
+  border: none;
+  outline: none;
+}
+
+.buscador-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #f6cb2e;
+  border-radius: 50%;
+  padding: 0px;
+  border: none;
+  box-shadow: 0 0 12px rgba(246, 203, 46, 0.4);
+  cursor: pointer;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*NAVEGACION */
+
+.navegacion ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.navegacion ul a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.navegacion ul a:hover {
+  opacity: 1;
+  color: #f6cb2e;
+}
+
+/*Media queries*/
+
+/*Movile*/
+
+/*Media queries*/
+
+/*Movile*/
+@media (min-width: 320px) and (max-width: 1200px) {
+  header .container-inf {
+    display: flex;
+    flex-wrap: wrap; /*REVISAR ESTO */
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logoPrincipal {
+    align-items: center;
+    gap: 1px;
+  }
+
+  .logoPrincipal svg {
+    display: none;
+  }
+
+  .logoPrincipal h1 {
+    font-size: 30px;
+  }
+  /*Navegacion */
+
+  /*REVISAR ESTO como funciona el menu desplegable con el JS*/
+  .menu-toggle {
+    display: block;
+  }
+
+  .navegacion {
+    display: none;
+    order: 4;
+    width: 100%;
+
+    background: #18130d;
+    border: 1px solid rgba(246, 203, 46, 0.25);
+    border-radius: 12px;
+    padding: 18px;
+  }
+
+  .navegacion.active {
+    display: block;
+  }
+
+  .navegacion ul {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navegacion ul a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  /* Buscador abajo del logo y hamburguesa */
+  .buscador-tienda {
+    width: 100%;
+    order: 3;
+    position: relative;
+    display: flex; /*REVISAR ESTO */
+  }
+
+  .buscador-input {
+    width: 100%;
+    padding: 14px 52px 14px 16px;
+    border-radius: 100px;
+    border: none;
+  }
+
+  .buscador-input:focus {
+    outline: none; /*REVISAR ESTO */
+  }
+
+  /* Lupa dentro del input */
+  .buscador-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%); /*REVISAR ESTO */
+
+    width: 36px;
+    height: 36px;
+
+    background: none;
+    color: #f6cb2e;
+
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(246, 203, 46, 0.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+  }
+
+  .buscador-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
