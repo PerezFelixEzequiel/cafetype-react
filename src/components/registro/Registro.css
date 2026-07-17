@@ -88,9 +88,9 @@
   color: #777;
 }
 
-.form-registro button {
+.btn-registrate {
   width: 100%;
-  padding: 13px 18px;
+  padding: 10px 18px;
 
   border: none;
   border-radius: 10px;
@@ -105,7 +105,43 @@
   transition: 0.3s ease;
 }
 
-.form-registro button:hover {
+.btn-registrate:hover {
   background-color: #f6cb2e;
   color: #151005;
+}
+
+.reset-button-container {
+  width: fit-content;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.reset-button-container span.reset-button {
+  color: #c6c6c6;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reset-button-container .reset-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.reset-button-container:hover span.reset-button {
+  color: #f6cb2e;
+}
+
+.reset-button-container:hover .reset-icon {
+  transform: rotate(-25deg);
+  transition: transform 0.3s ease;
 }

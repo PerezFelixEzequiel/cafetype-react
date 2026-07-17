@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Registro.css";
 
 import animacionCafe from "../../assets/registrate/maquina-de-cafe.json?url";
+import imgreset from "../../assets/icons/registro/reset-icon.svg";
 
 function Registro() {
   const [email, setEmail] = useState("");
@@ -22,7 +23,7 @@ function Registro() {
       return;
     }
 
-    alert(`Gracias por registrarte: ${email}`);
+    alert(`Gracias por suscribirte a nuestras novedades: ${email}`);
     setEmail("");
   };
 
@@ -62,8 +63,13 @@ function Registro() {
               onChange={manejarCambioEmail}
             />
 
-            <button type="submit">Registrate</button>
-            <button type="reset">Resetear</button>
+            <button className="btn-registrate" type="submit">
+  Recibir novedades
+</button>
+           <button className="reset-button-container" type="reset">
+  <img src={imgreset} alt="" className="reset-icon" />
+  <span className="reset-button">Reset</span>
+</button>
           </form>
         </div>
       </div>
