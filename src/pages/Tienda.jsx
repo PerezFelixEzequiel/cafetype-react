@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import HeaderTienda from "../components/headerTienda/HeaderTienda";
+import HeaderTienda from "../components/headertienda/HeaderTienda";
 import Footer from "../components/footer/Footer";
 import FiltrosTienda from "../components/tienda/FiltrosTienda";
 import TiendaProductos from "../components/tienda/TiendaProductos";

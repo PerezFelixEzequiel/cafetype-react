@@ -459,7 +459,7 @@
 
   background-color: #532c00;
 
-  mask-image: url("../assets/cards-modal/coffee-bean.svg");
+  mask-image: url("../../assets/icons/productos/coffee-bean.svg");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
