@@ -1,6 +1,6 @@
 import "./Explora.css";
 import { exploraItems } from "../../data/explora";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Explora() {
   return (
@@ -17,11 +17,9 @@ function Explora() {
 }
 
 function ExploraCard({ item }) {
-  
   if (item.externo) {
     return (
       <li className="explora-card">
-        
         <a
           href={item.href}
           className="explora-link"
@@ -29,7 +27,12 @@ function ExploraCard({ item }) {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={item.icono} alt="" className="explora-icon" aria-hidden="true" />
+          <img
+            src={item.icono}
+            alt=""
+            className="explora-icon"
+            aria-hidden="true"
+          />
           <div className="explora-texto">
             <h3>{item.titulo}</h3>
             <p>{item.descripcion}</p>
@@ -40,16 +43,15 @@ function ExploraCard({ item }) {
     );
   }
 
-  
   return (
     <li className="explora-card">
-      
-      <Link
-        to={item.to}
-        className="explora-link"
-        data-card={item.id}
-      >
-        <img src={item.icono} alt="" className="explora-icon" aria-hidden="true" />
+      <Link to={item.to} className="explora-link" data-card={item.id}>
+        <img
+          src={item.icono}
+          alt=""
+          className="explora-icon"
+          aria-hidden="true"
+        />
         <div className="explora-texto">
           <h3>{item.titulo}</h3>
           <p>{item.descripcion}</p>

@@ -21,28 +21,25 @@ function Home() {
     setProductoSeleccionado(null);
   };
 
-return (
-  <>
-    <Header />
+  return (
+    <>
+      <Header />
 
-    <main>
-      <Banner />
-      <Productos onVerProducto={abrirModal} />
-      <DescubreCafe onVerCafe={abrirModal} />
-      <Resenas />
-      <Explora />
-      <Registro />
-    </main>
+      <main>
+        <Banner />
+        <Productos onVerProducto={abrirModal} />
+        <DescubreCafe onVerCafe={abrirModal} />
+        <Resenas />
+        <Explora />
+        <Registro />
+      </main>
 
-    <Footer />
+      <Footer />
 
-    {productoSeleccionado && (
-      <ModalProducto
-        producto={productoSeleccionado}
-        onCerrar={cerrarModal}
-      />
-    )}
-  </>
-);
+      {productoSeleccionado && (
+        <ModalProducto producto={productoSeleccionado} onCerrar={cerrarModal} />
+      )}
+    </>
+  );
 }
 export default Home;

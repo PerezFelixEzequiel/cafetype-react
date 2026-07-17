@@ -110,13 +110,11 @@
   box-shadow: 0 0 12px rgba(246, 203, 46, 0.45);
 }
 
-
 /* // Módulo 2 - Test */
 .modulo-2 {
   display: flex;
   margin: 0;
   padding: 0;
-
 }
 
 .modulo-2 .pregunta-cafe {
@@ -220,7 +218,11 @@
   overflow: hidden;
 
   background:
-    radial-gradient(circle at 80% 45%, rgba(246, 203, 46, 0.32), transparent 38%),
+    radial-gradient(
+      circle at 80% 45%,
+      rgba(246, 203, 46, 0.32),
+      transparent 38%
+    ),
     linear-gradient(180deg, rgba(83, 44, 0, 0.38), rgba(0, 0, 0, 0.35));
 
   border: solid 2px #f6cb2e;

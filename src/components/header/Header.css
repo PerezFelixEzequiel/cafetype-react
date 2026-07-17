@@ -29,14 +29,13 @@ header .container-inf {
   height: 40px;
 }
 
-
 .logoPrincipal .logoLink .logoNombre {
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.logoPrincipal .logoLink .logoNombre span{
+.logoPrincipal .logoLink .logoNombre span {
   color: #f6cb2e;
 }
 

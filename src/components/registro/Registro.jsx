@@ -64,12 +64,12 @@ function Registro() {
             />
 
             <button className="btn-registrate" type="submit">
-  Recibir novedades
-</button>
-           <button className="reset-button-container" type="reset">
-  <img src={imgreset} alt="" className="reset-icon" />
-  <span className="reset-button">Reset</span>
-</button>
+              Recibir novedades
+            </button>
+            <button className="reset-button-container" type="reset">
+              <img src={imgreset} alt="" className="reset-icon" />
+              <span className="reset-button">Reset</span>
+            </button>
           </form>
         </div>
       </div>

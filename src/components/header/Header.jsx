@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 import granocafe from "../../assets/icons/header/grano-cafe.svg";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -10,19 +10,18 @@ function Header() {
     <header>
       <div className="container-inf">
         <div className="logoPrincipal">
-          
-          <Link to="/" className="logoLink" aria-label="Ir al inicio de CAFETYPE">
-            <img
-              src={granocafe}
-              alt="Logo de CAFETYPE"
-              className="logoGrano"
-            />
+          <Link
+            to="/"
+            className="logoLink"
+            aria-label="Ir al inicio de CAFETYPE"
+          >
+            <img src={granocafe} alt="Logo de CAFETYPE" className="logoGrano" />
             <span className="logoNombre">
               <span>Cafe</span>type
             </span>
           </Link>
         </div>
-        
+
         {/* Botón hamburguesa */}
         <button
           className="menu-toggle"
@@ -37,7 +36,7 @@ function Header() {
             aria-hidden="true"
           />
         </button>
-        
+
         {/* Barra Buscadora */}
         <form className="buscador-tienda" role="search">
           <input
@@ -70,18 +69,24 @@ function Header() {
             </svg>
           </button>
         </form>
-        
+
         {/* Navegacion */}
         <nav className="navegacion" id="menu-principal">
           <ul>
-            
-            <li><a href="/#productos">Productos</a></li>
-            
-            
-            <li><Link to="/tienda">Tienda</Link></li>
-            
-            <li><a href="/#descubre-cafe">Tu cafe ideal</a></li>
-            <li><a href="/#explora-cafetype">Contacto</a></li>
+            <li>
+              <a href="/#productos">Productos</a>
+            </li>
+
+            <li>
+              <Link to="/tienda">Tienda</Link>
+            </li>
+
+            <li>
+              <a href="/#descubre-cafe">Tu cafe ideal</a>
+            </li>
+            <li>
+              <a href="/#explora-cafetype">Contacto</a>
+            </li>
           </ul>
         </nav>
       </div>

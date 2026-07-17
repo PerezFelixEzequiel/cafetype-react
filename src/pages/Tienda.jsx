@@ -20,9 +20,9 @@ function Tienda() {
   const [carrito, setCarrito] = useState([]);
   const [carritoAbierto, setCarritoAbierto] = useState(false);
 
-const abrirCarrito = () => {
-  setCarritoAbierto(true);
-};
+  const abrirCarrito = () => {
+    setCarritoAbierto(true);
+  };
 
   const cerrarCarrito = () => {
     setCarritoAbierto(false);
@@ -31,14 +31,14 @@ const abrirCarrito = () => {
   const agregarAlCarrito = (producto) => {
     setCarrito((carritoActual) => {
       const productoExiste = carritoActual.find(
-        (item) => item.id === producto.id
+        (item) => item.id === producto.id,
       );
 
       if (productoExiste) {
         return carritoActual.map((item) =>
           item.id === producto.id
             ? { ...item, cantidad: item.cantidad + 1 }
-            : item
+            : item,
         );
       }
 
@@ -53,8 +53,8 @@ const abrirCarrito = () => {
       carritoActual.map((item) =>
         item.id === idProducto
           ? { ...item, cantidad: item.cantidad + 1 }
-          : item
-      )
+          : item,
+      ),
     );
   };
 
@@ -64,15 +64,15 @@ const abrirCarrito = () => {
         .map((item) =>
           item.id === idProducto
             ? { ...item, cantidad: item.cantidad - 1 }
-            : item
+            : item,
         )
-        .filter((item) => item.cantidad > 0)
+        .filter((item) => item.cantidad > 0),
     );
   };
 
   const vaciarCarrito = () => {
-  setCarrito([]);
-};
+    setCarrito([]);
+  };
 
   const cambiarTipo = (evento) => {
     setFiltros({
@@ -112,15 +112,15 @@ const abrirCarrito = () => {
   });
 
   const cantidadTotalCarrito = carrito.reduce((total, item) => {
-  return total + item.cantidad;
-}, 0);
+    return total + item.cantidad;
+  }, 0);
 
   return (
     <>
       <HeaderTienda
-  onAbrirCarrito={abrirCarrito}
-  cantidadCarrito={cantidadTotalCarrito}
-/>
+        onAbrirCarrito={abrirCarrito}
+        cantidadCarrito={cantidadTotalCarrito}
+      />
 
       <main className="tienda-layout">
         <FiltrosTienda
@@ -138,13 +138,13 @@ const abrirCarrito = () => {
       <Footer />
 
       <ModalCarrito
-  carrito={carrito}
-  carritoAbierto={carritoAbierto}
-  onCerrarCarrito={cerrarCarrito}
-  onSumarCantidad={sumarCantidad}
-  onRestarCantidad={restarCantidad}
-  onVaciarCarrito={vaciarCarrito}
-/>
+        carrito={carrito}
+        carritoAbierto={carritoAbierto}
+        onCerrarCarrito={cerrarCarrito}
+        onSumarCantidad={sumarCantidad}
+        onRestarCantidad={restarCantidad}
+        onVaciarCarrito={vaciarCarrito}
+      />
     </>
   );
 }

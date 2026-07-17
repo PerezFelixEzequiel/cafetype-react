@@ -81,11 +81,7 @@ function ModalCarrito({
           <>
             <p className="carrito-vacio">Tu carrito está vacío.</p>
 
-            <button
-              className="btn-compra-carrito"
-              type="button"
-              disabled
-            >
+            <button className="btn-compra-carrito" type="button" disabled>
               Finalizar Compra
             </button>
           </>

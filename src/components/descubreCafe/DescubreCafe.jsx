@@ -9,8 +9,6 @@ import espressoIcon from "../../assets/icons/descubre-cafe/coffe-machine.svg";
 import filtroIcon from "../../assets/icons/descubre-cafe/coffee-pot-svgrepo-com.svg";
 import mokaIcon from "../../assets/icons/descubre-cafe/moka-pot-svgrepo-com.svg";
 
-
-
 function DescubreCafe({ onVerCafe }) {
   const [testActivo, setTestActivo] = useState(false);
 
@@ -116,7 +114,7 @@ function DescubreCafe({ onVerCafe }) {
                 onChange={cambiarRespuesta}
               />
             </fieldset>
-{/* pregunta 2 */}
+            {/* pregunta 2 */}
             <fieldset className="pregunta-cafe">
               <legend>
                 <span className="span-pregunta">2.</span>
@@ -159,7 +157,7 @@ function DescubreCafe({ onVerCafe }) {
                 onChange={cambiarRespuesta}
               />
             </fieldset>
-{/* pregunta 3 */}
+            {/* pregunta 3 */}
             <fieldset className="pregunta-cafe pregunta-3">
               <legend>
                 <span className="span-pregunta">3.</span>
@@ -199,7 +197,7 @@ function DescubreCafe({ onVerCafe }) {
               />
             </fieldset>
           </form>
-{/* modulo 3 */}
+          {/* modulo 3 */}
           <article className="modulo-3 match-cafe" aria-live="polite">
             <span className="match-label">Tu café ideal</span>
 
@@ -225,14 +223,7 @@ function DescubreCafe({ onVerCafe }) {
   );
 }
 
-function OpcionRadio({
-  name,
-  value,
-  texto,
-  icono,
-  respuestaActual,
-  onChange,
-}) {
+function OpcionRadio({ name, value, texto, icono, respuestaActual, onChange }) {
   return (
     <label className="opcion-cafe">
       <input
@@ -253,7 +244,7 @@ function OpcionRadio({
 
 function buscarCafeRecomendado(respuestas) {
   const cafePorNotas = productosCafe.find(
-    (producto) => producto.familiaSabor === respuestas.notas
+    (producto) => producto.familiaSabor === respuestas.notas,
   );
 
   if (cafePorNotas) {

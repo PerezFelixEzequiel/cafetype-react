@@ -3,7 +3,7 @@ import marketIcon from "../assets/icons/explora/market.svg";
 import contactIcon from "../assets/icons/explora/contact-new-svgrepo-com.svg";
 import promotionIcon from "../assets/icons/explora/promotion-segments-svgrepo-com.svg";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const exploraItems = [
   {

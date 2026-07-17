@@ -6,7 +6,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function ModalProducto({ producto, onCerrar }) {
   return (
@@ -73,16 +73,16 @@ function ModalProducto({ producto, onCerrar }) {
           <h4>Perfil de Sabores</h4>
 
           <div className="perfil-sabores">
-            <FilaSabor nombre="Intensidad" valor={producto.perfilSabores.intensidad} />
+            <FilaSabor
+              nombre="Intensidad"
+              valor={producto.perfilSabores.intensidad}
+            />
             <FilaSabor nombre="Acidez" valor={producto.perfilSabores.acidez} />
             <FilaSabor nombre="Cuerpo" valor={producto.perfilSabores.cuerpo} />
             <FilaSabor nombre="Dulzor" valor={producto.perfilSabores.dulzor} />
           </div>
 
-          <Link
-            to="/tienda"
-            className="btn-modal-tienda"
-          >
+          <Link to="/tienda" className="btn-modal-tienda">
             Agregar al carrito
           </Link>
         </div>

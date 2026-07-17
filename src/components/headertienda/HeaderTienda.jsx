@@ -10,12 +10,12 @@ function HeaderTienda({ onAbrirCarrito, cantidadCarrito = 0 }) {
     <header>
       <div className="container-inf">
         <div className="logoPrincipal">
-          <Link to="/" className="logoLink" aria-label="Ir al inicio de CAFETYPE">
-            <img
-              src={granocafe}
-              alt="Logo de CAFETYPE"
-              className="logoGrano"
-            />
+          <Link
+            to="/"
+            className="logoLink"
+            aria-label="Ir al inicio de CAFETYPE"
+          >
+            <img src={granocafe} alt="Logo de CAFETYPE" className="logoGrano" />
 
             <span className="logoNombre">
               <span>Cafe</span>type
@@ -26,18 +26,16 @@ function HeaderTienda({ onAbrirCarrito, cantidadCarrito = 0 }) {
         <nav className="navegacion">
           <ul>
             <li>
-             <button
-  type="button"
-  className="btn-carrito-header"
-  onClick={onAbrirCarrito}
-  aria-label="Abrir carrito"
->
-  <img src={carrito} alt="" className="btn-tienda" />
+              <button
+                type="button"
+                className="btn-carrito-header"
+                onClick={onAbrirCarrito}
+                aria-label="Abrir carrito"
+              >
+                <img src={carrito} alt="" className="btn-tienda" />
 
-  <span className="contador-carrito">
-    {cantidadCarrito ?? 0}
-  </span>
-</button>
+                <span className="contador-carrito">{cantidadCarrito ?? 0}</span>
+              </button>
             </li>
           </ul>
         </nav>

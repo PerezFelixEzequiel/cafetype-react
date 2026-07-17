@@ -6,7 +6,6 @@
   width: 100%;
   height: 100vh;
 
-
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
@@ -52,7 +51,7 @@
   transform: scale(1.15);
 }
 
-.close:hover{
+.close:hover {
   color: #f6cb2e;
   transform: scale(1.2);
 }
@@ -89,56 +88,49 @@
   width: 8px;
 }
 
-
-
 .modal-content::-webkit-scrollbar-thumb {
   background-color: #532c0052;
   border-radius: 20px;
 }
 
-
-
-.img-modal{
+.img-modal {
   width: 370px;
   height: 370px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px #532c00c2;
 }
 
-
-
-.cafe-titulo-modal{
+.cafe-titulo-modal {
   color: #532c00;
   font-size: 28px;
 }
 
-.cafe-precio-modal{
+.cafe-precio-modal {
   color: #532c00c7;
   font-size: 25px;
 }
 
-.container-descripcion{
+.container-descripcion {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.cafe-descripcion{
+.cafe-descripcion {
   color: #532c00c7;
 }
 
-.cafe-descripcion span{
+.cafe-descripcion span {
   color: #532c00;
   font-weight: bold;
 }
-.container-detalle{
+.container-detalle {
   width: 100%;
   border-radius: 10px;
 }
 
-.container-detalle h4{
+.container-detalle h4 {
   font-size: 18px;
-  
 
   background-color: #532c00;
   text-align: center;
@@ -150,10 +142,8 @@
 
 .container-detalle {
   width: 100%;
-  
+
   overflow: hidden;
-  
-  
 }
 
 .container-detalle h4 {
@@ -206,18 +196,18 @@
   mask-position: center;
   mask-size: contain;
 
-  
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
-  
-  
+
   display: inline-block;
 
   opacity: 0.25;
-  
+
   position: relative;
-transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .grano-activo {
@@ -257,7 +247,6 @@ transition: opacity 0.3s ease, transform 0.3s ease;
   width: 100%;
   padding: 13px 18px;
   margin-top: 40px;
-  
 
   display: flex;
   justify-content: center;
