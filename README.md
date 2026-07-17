@@ -40,3 +40,49 @@ src/
 ├── styles/
 ├── App.jsx
 └── main.jsx
+```
+
+## Cómo ejecutar el proyecto
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/PerezFelixEzequiel/cafetype-react.git
+```
+
+2. Entrar a la carpeta del proyecto:
+
+```bash
+cd cafetype-react
+```
+
+3. Instalar las dependencias:
+
+```bash
+npm install
+```
+
+4. Ejecutar el proyecto en modo desarrollo:
+
+```bash
+npm run dev
+```
+
+5. Abrir en el navegador:
+
+```txt
+http://localhost:5173/
+```
+
+## Build de producción
+
+Para generar una versión optimizada del proyecto:
+
+```bash
+npm run build
+```
+
+## Autor
+
+Pérez Félix Ezequiel
+
