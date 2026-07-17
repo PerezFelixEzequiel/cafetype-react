@@ -20,10 +20,9 @@ function Tienda() {
   const [carrito, setCarrito] = useState([]);
   const [carritoAbierto, setCarritoAbierto] = useState(false);
 
-  const abrirCarrito = () => {
-    console.log("Abriendo carrito");
-    setCarritoAbierto(true);
-  };
+const abrirCarrito = () => {
+  setCarritoAbierto(true);
+};
 
   const cerrarCarrito = () => {
     setCarritoAbierto(false);
