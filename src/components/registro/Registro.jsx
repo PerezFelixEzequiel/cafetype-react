@@ -6,8 +6,16 @@ import animacionCafe from "../../assets/registrate/maquina-de-cafe.json?url";
 function Registro() {
   const [email, setEmail] = useState("");
 
+  const manejarCambioEmail = (evento) => {
+    console.log("Cambio en el input email:", evento.target.value);
+    setEmail(evento.target.value);
+  };
+
   const enviarFormulario = (evento) => {
     evento.preventDefault();
+
+    console.log("Submit del formulario");
+    console.log("Email ingresado:", email);
 
     if (email.trim() === "") {
       alert("Por favor ingresá tu correo electrónico.");
@@ -15,6 +23,11 @@ function Registro() {
     }
 
     alert(`Gracias por registrarte: ${email}`);
+    setEmail("");
+  };
+
+  const resetearFormulario = () => {
+    console.log("Formulario reseteado");
     setEmail("");
   };
 
@@ -41,15 +54,16 @@ function Registro() {
         ></lottie-player>
 
         <div className="form-registro">
-          <form onSubmit={enviarFormulario}>
+          <form onSubmit={enviarFormulario} onReset={resetearFormulario}>
             <input
               type="email"
               placeholder="Tu correo electrónico"
               value={email}
-              onChange={(evento) => setEmail(evento.target.value)}
+              onChange={manejarCambioEmail}
             />
 
             <button type="submit">Registrate</button>
+            <button type="reset">Resetear</button>
           </form>
         </div>
       </div>
